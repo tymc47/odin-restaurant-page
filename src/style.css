@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Signika&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    font-family: 'Signika', sans-serif;
+}
+
+#content {
+    display: flex;
+}
+
+.tabcontainer {
+    background-color: #262626;
+    color: #f9f9f9;
+    padding: 10% 20% 0% 5%;
+    width: 60%;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.tabcontent {
+    font-size: 1.2rem;
+}
+
+.background {
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    width: max(40%, 40vw);
+    height: max(100%, 100vh);
+    flex: none;
+}
+
+.bg-img {
+    width: 40vw;
+    height: 100vh;
+    display: block;
+}
+
+.background > .restro-name {
+    color: #262626;
+    position: absolute;
+    top: 15%;
+    right: 48px;
+    background-color: rgb(255,255,255, 0.7);
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+
+.background > .navbar {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+    top: 50%;
+    right: 48px;
+}
+
+button {
+    background-color: #262626;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    opacity: 0.8;
+    color: #f9f9f9;
+    border: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+
+button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 7px;
+    right: -10px;
+    transition: 0.3s;
+  }
+  
+  button:hover{
+    opacity: 1;
+    background-color: #f9f9f9;
+    color: #262626;
+  }
+  
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+.hours {
+    margin-top: 3rem;
+}
+
+.foodcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-height: max(200px, 60vh);
+    overflow-y: hidden;
+}
+
+.foodcontainer:hover, .foodcontainer:active, .foodcontainer:focus {
+    overflow-y: auto;
+}
+
+.dimsumcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+}
+
+.dimsumcard > img {
+    border-radius: 50%;
+    height: 256px;
+    width: 256px;
+}
+
+
+
